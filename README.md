@@ -7,8 +7,13 @@
 <a href="https://arxiv.org/pdf/2308.00122v2"><img src="https://img.shields.io/badge/arXiv-DAVIS-b31b1b.svg" height=20.5></a>
 
 <p align="center">
-<img src="asset/teaser.pdf" width="800px"/>
+<img src="asset/teaser.png" width="800px"/>
 </p>
+
+## News
+
+* **2024-12:** 🏆 DAVIS won ACCV’24 Best Paper Award, Honorable Mention! 
+* **2024-09:** DAVIS is accepted as **ACCV 2024 Oral** Presentation.
 
 ## Installation
 Create a conda environment and install dependencies:
@@ -22,6 +27,20 @@ conda activate DAVIS
 pip install -r requirements.txt
 ```
 
+or install the following libraries by yourself:
+```bash
+torch
+torchvision
+librosa
+soundfile
+clip
+einops
+tqdm
+mir_eval
+scipy
+imageio
+```
+
 ## Dataset
 
 ### 1. Download Datasets
@@ -31,6 +50,8 @@ pip install -r requirements.txt
 
 - **AVE Dataset:**  
   Download from [AVE Dataset GitHub](https://github.com/YapengTian/AVE-ECCV18).
+
+> **Note:** Some YouTube IDs in the MUSIC dataset are no longer valid. As a temporary solution, we will provide zipped data to help you get started: [MUSIC Dataset Download](https://drive.google.com/file/d/1NFdvqUGBmVeb6oQwcDLgk6US5I-FErK9/view?usp=sharing).
 
 ---
 
@@ -85,6 +106,8 @@ The directory structure for the datasets is as follows:
 
 
 ## Training
+
+Modify ``/YOUR_ROOT`` to the directory you store the data in the ``./dataset/ave.py`` and ``./dataset/music.py``, and also the ``YOUR_CKPT`` in the ``run.sh`` and ``run_ave.sh``.
 
 We provide a minimal example to launch the training. To get started, try running:
 

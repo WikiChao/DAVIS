@@ -1,0 +1,21 @@
+clip @ git+https://github.com/openai/CLIP.git@a9b1bf5920416aaeaec965c25dd9e8f98c864f16
+Cython==0.29.32
+einops==0.6.0
+ftfy==6.1.1
+future==0.18.2
+imageio==2.21.1
+imageio-ffmpeg==0.4.7
+iopath==0.1.10
+librosa==0.9.2
+matplotlib==3.5.3
+matplotlib-inline==0.1.6
+mir-eval==0.7
+moviepy==1.0.3
+numpy==1.23.5
+opencv-python==4.6.0.66
+SoundFile==0.10.3.post1
+tensorboard==2.10.1
+tokenizers==0.15.0
+torch==1.12.1
+torchvision==0.13.1
+tqdm==4.64.0
