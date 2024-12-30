@@ -123,20 +123,19 @@ bash run_ave.sh # for AVE dataset
 
 ## Evaluation
 
-To launch the evaluation, modify the following arguements in ``run.sh`` or ``run_ave.sh`` to the following:
+To launch the evaluation, modify the following arguments in ``run.sh`` or ``run_ave.sh`` to the following:
 
 ```bash
 OPTS+="--split test "
 OPTS+="--mode eval"
 ```
 
+### Pretrained model 
+We provide the model trained on MUSIC dataset, which can be downloaded [here](https://drive.google.com/drive/folders/1yqJwSR46oh7R1JSepsXa1OPgNanTCPU4?usp=sharing).
+
 ## Acknowledgements
 
-We borrow code from the following repositories:
-
-- [CCoL](https://github.com/YapengTian/CCOL-CVPR21)
-- [diffusion-pytorch](https://github.com/lucidrains/denoising-diffusion-pytorch) 
-- [iQuery](https://github.com/JiabenChen/iQuery) 
+We borrow code from the following repositories [CCoL](https://github.com/YapengTian/CCOL-CVPR21), [diffusion-pytorch](https://github.com/lucidrains/denoising-diffusion-pytorch) and [iQuery](https://github.com/JiabenChen/iQuery).
 
 ## Citation
 If you use this code for your research, please cite the following work: 
