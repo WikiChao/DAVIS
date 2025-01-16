@@ -147,3 +147,14 @@ If you use this code for your research, please cite the following work:
   year={2023}
 }
 ```
+or
+```
+@InProceedings{Huang_2024_ACCV,
+    author    = {Huang, Chao and Liang, Susan and Tian, Yapeng and Kumar, Anurag and Xu, Chenliang},
+    title     = {High-Quality Visually-Guided Sound Separation from Diverse Categories},
+    booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
+    month     = {December},
+    year      = {2024},
+    pages     = {35-49}
+}
+```
