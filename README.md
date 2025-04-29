@@ -4,14 +4,14 @@
 > We propose DAVIS, a Diffusion-based Audio-VIsual Separation framework that solves the audio-visual sound source separation task through generative learning. Existing methods typically frame sound separation as a mask-based regression problem, achieving significant progress. However, they face limitations in capturing the complex data distribution required for high-quality separation of sounds from diverse categories. In contrast, DAVIS leverages a generative diffusion model and a Separation U-Net to synthesize separated sounds directly from Gaussian noise, conditioned on both the audio mixture and the visual information. With its generative objective, DAVIS is better suited to achieving the goal of high-quality sound separation across diverse sound categories. We compare DAVIS to existing state-of-the-art discriminative audio-visual separation methods on the AVE and MUSIC datasets, and results show that DAVIS outperforms other methods in separation quality, demonstrating the advantages of our framework for tackling the audio-visual source separation task.
 
 <a href="https://wikichao.github.io/data/projects/DAVIS/"><img src="https://img.shields.io/static/v1?label=Project&message=Website&color=red" height=20.5></a> 
-<a href="https://arxiv.org/pdf/2308.00122v2"><img src="https://img.shields.io/badge/arXiv-DAVIS-b31b1b.svg" height=20.5></a>
+<a href="https://arxiv.org/pdf/2308.00122v2"><img src="https://img.shields.io/badge/arXiv-DAVIS-b31b1b.svg" height=20.5></a> <h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. </h5>
 
 <p align="center">
 <img src="asset/teaser.png" width="800px"/>
 </p>
 
 ## News
-
+* **2025-04:** 🚀 **NEW: DAVIS-Flow released!** Leveraging Flow Matching for faster training and better separation quality. [Try it now!](#davis-flow)
 * **2024-12:** 🏆 DAVIS won ACCV’24 Best Paper Award, Honorable Mention! 
 * **2024-09:** DAVIS is accepted as **ACCV 2024 Oral** Presentation.
 
@@ -130,8 +130,23 @@ OPTS+="--split test "
 OPTS+="--mode eval"
 ```
 
-### Pretrained model 
-We provide the model trained on MUSIC dataset, which can be downloaded [here](https://drive.google.com/drive/folders/1yqJwSR46oh7R1JSepsXa1OPgNanTCPU4?usp=sharing).
+## DAVIS-Flow
+DAVIS-Flow is our improved version that leverages flow matching techniques for faster training and improved separation quality.
+
+### Training and Inference
+Use the following scripts:
+* For MUSIC dataset: ``run_fm.sh``
+* For AVE dataset: ``run_ave_fm.sh``
+
+## Model Zoos
+Our pre-trained models are available for download. Use these models to quickly get started.
+
+| Dataset | DAVIS | DAVIS-Flow |
+|---------|-------|------------|
+| MUSIC   | [Download](https://drive.google.com/drive/folders/1yqJwSR46oh7R1JSepsXa1OPgNanTCPU4?usp=sharing) | [Download](https://drive.google.com/drive/folders/1KRbVpi1KYKMoQCQYftnavLz0CnB0KEuY?usp=sharing) |
+| AVE     | Coming Soon | [Download](https://drive.google.com/drive/folders/1M-ZpE2yK3mQ_qMfXL3J9kACGfdD4Mcnv?usp=sharing) |
+
+All models are ready for inference using the evaluation scripts described in the previous sections.
 
 ## Acknowledgements
 
