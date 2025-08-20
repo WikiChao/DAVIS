@@ -32,6 +32,11 @@ class NetWrapper(torch.nn.Module):
         self.t_eps = 0.
         self.sigma_min = 1e-4
         self.nfe_steps = 2
+        loss_fn = "l1"
+        if loss_fn == "l1":
+            self.loss_fn = lambda a, b: torch.mean(torch.abs(a - b))
+        elif loss_fn == "l2":
+            self.loss_fn = lambda a, b: torch.mean((a - b) ** 2)
 
     def _step(self, x, target, condition):
         self.net.train()
