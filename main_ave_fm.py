@@ -89,7 +89,7 @@ class NetWrapper(torch.nn.Module):
         # 0.0 warp the spectrogram
         if args.log_freq:
             grid_warp = torch.from_numpy(
-                warpgrid(B, 256, T, warp=True)).to(args.device)
+                warpgrid(B, 256, 256, warp=True)).to(args.device)
             mag_mix = F.grid_sample(mag_mix, grid_warp, align_corners=True)
             for n in range(N):
                 mags[n] = F.grid_sample(mags[n].float(), grid_warp, align_corners=True)
@@ -136,7 +136,7 @@ class NetWrapper(torch.nn.Module):
         # 0.0 warp the spectrogram
         if args.log_freq:
             grid_warp = torch.from_numpy(
-                warpgrid(B, 256, T, warp=True)).to(args.device)
+                warpgrid(B, 256, 256, warp=True)).to(args.device)
             mag_mix = F.grid_sample(mag_mix.to(args.device), grid_warp, align_corners=True)
             for n in range(N):
                 mags[n] = F.grid_sample(mags[n].float().to(args.device), grid_warp, align_corners=True)
