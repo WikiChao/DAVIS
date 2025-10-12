@@ -145,7 +145,7 @@ Our pre-trained models are available for download. Use these models to quickly g
 | Dataset | DAVIS | DAVIS-Flow |
 |---------|-------|------------|
 | MUSIC   | [Download](https://drive.google.com/drive/folders/1yqJwSR46oh7R1JSepsXa1OPgNanTCPU4?usp=sharing) | [Download](https://drive.google.com/drive/folders/1KRbVpi1KYKMoQCQYftnavLz0CnB0KEuY?usp=sharing) |
-| AVE     | Coming Soon | [Download](https://drive.google.com/drive/folders/1M-ZpE2yK3mQ_qMfXL3J9kACGfdD4Mcnv?usp=sharing) |
+| AVE     | - | [Download](https://drive.google.com/drive/folders/1M-ZpE2yK3mQ_qMfXL3J9kACGfdD4Mcnv?usp=sharing) |
 
 All models are ready for inference using the evaluation scripts described in the previous sections.
 
