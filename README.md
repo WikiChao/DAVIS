@@ -155,15 +155,17 @@ We borrow code from the following repositories [CCoL](https://github.com/YapengT
 
 ## Citation
 If you use this code for your research, please cite the following work: 
+
+DAVIS-Flow:
 ```
-@article{huang2023davis,
-  title={DAVIS: High-Quality Audio-Visual Separation with Generative Diffusion Models},
+@article{huang2025high,
+  title={High-Quality Sound Separation Across Diverse Categories via Visually-Guided Generative Modeling},
   author={Huang, Chao and Liang, Susan and Tian, Yapeng and Kumar, Anurag and Xu, Chenliang},
-  journal={arXiv preprint arXiv:2308.00122},
-  year={2023}
+  journal={arXiv preprint arXiv:2509.22063},
+  year={2025}
 }
 ```
-or
+and DAVIS:
 ```
 @InProceedings{Huang_2024_ACCV,
     author    = {Huang, Chao and Liang, Susan and Tian, Yapeng and Kumar, Anurag and Xu, Chenliang},
