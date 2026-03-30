@@ -158,11 +158,15 @@ If you use this code for your research, please cite the following work:
 
 DAVIS-Flow:
 ```
-@article{huang2025high,
-  title={High-Quality Sound Separation Across Diverse Categories via Visually-Guided Generative Modeling},
+@article{huang2026high,
+  title={High-quality sound separation across diverse categories via visually-guided generative modeling},
   author={Huang, Chao and Liang, Susan and Tian, Yapeng and Kumar, Anurag and Xu, Chenliang},
-  journal={arXiv preprint arXiv:2509.22063},
-  year={2025}
+  journal={International Journal of Computer Vision},
+  volume={134},
+  number={3},
+  pages={104},
+  year={2026},
+  publisher={Springer}
 }
 ```
 and DAVIS:
